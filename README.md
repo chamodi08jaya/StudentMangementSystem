@@ -1,0 +1,2 @@
+# StudentMangementSystem
+for University work
