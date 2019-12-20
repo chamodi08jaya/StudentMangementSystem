@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/fontawesome.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-host-cloud.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/owl.css">
-   
 <!--
 
 Host Cloud Template
@@ -31,44 +30,44 @@ https://templatemo.com/tm-541-host-cloud
   <body>
 
     <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>   -->
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="<?php echo base_url();?>index.html"><h2>Southern <em>Institute</em></h2></a>
+          <a class="navbar-brand"><h2>Southern <em>Institute</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url();?>home.html">Home
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/index">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>about.html">About Us</a>
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/about">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>services.html">Our Services</a>
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>contact.html">Contact Us</a>
+                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a>
               </li>
             </ul>
           </div>
           <div class="functional-buttons">
             <ul>
-              <li><a href="<?php echo base_url();?>login.html">Log in</a></li>
+              <li><a href="<?php echo base_url();?>index.php/Welcome/login">Log in</a></li>
               <!-- <li><a href="#">Sign Up</a></li> -->
             </ul>
           </div>
@@ -390,7 +389,7 @@ https://templatemo.com/tm-541-host-cloud
             <div class="footer-item">
               <div class="footer-heading">
                 <h2>Gallery</h2>
-                <!-- <img src="C:\wamp64\www\projectI\application\views\assets\images\pic.jpg"> -->
+                    <!-- <img src="<?php echo base_url();?>assets\images\pic.jpg" width="500" height="100"> -->
               </div>
               <!-- <p>Host Cloud is provided by TemplateMo for free of charge. Anyone can download and use this CSS Bootstrap template for commercial purposes.</p>
              -->
@@ -406,7 +405,7 @@ https://templatemo.com/tm-541-host-cloud
                   <li>Southern Institute Galle</li>
                   <li>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</li>
                   <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                      <img src="C:\wamp64\www\projectI\application\views\assets\images\map.png">
+                      <img src="<?php echo base_url();?>assets\images\map.png">
                      
                   </a>
                 <!-- <li><a href="#">Basic Cloud 5X</a></li>
@@ -454,7 +453,7 @@ https://templatemo.com/tm-541-host-cloud
           <div class="col-md-12">
             <div class="sub-footer">
               <p>Copyright &copy; Team Innoview
-				- Designed by <a rel="nofollow" href="https://templatemo.com">Chamo</a></p>
+				- Designed by <a rel="nofollow" href="<?php echo base_url();?>https://templatemo.com">Chamo</a></p>
             </div>
           </div>
         </div>
