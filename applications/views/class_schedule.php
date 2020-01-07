@@ -50,7 +50,7 @@ https://templatemo.com/tm-541-host-cloud
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/index">Home
+                <a class="nav-link" href="<?php echo base_url();?>index.php">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -235,7 +235,7 @@ https://templatemo.com/tm-541-host-cloud
                 <h2>Useful Links</h2>
               </div>
               <ul class="footer-list">
-                  <li><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
+                  <li><a href="<?php echo base_url();?>index.php">Home</a></li>
                   <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
                   <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
                   <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>

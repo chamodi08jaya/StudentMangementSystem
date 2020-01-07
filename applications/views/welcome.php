@@ -9,7 +9,7 @@
     <meta name="author" content="TemplateMo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-    <title>Home Page</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url();?>vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,27 +30,27 @@ https://templatemo.com/tm-541-host-cloud
   <body>
 
     <!-- ***** Preloader Start ***** -->
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div class="jumper">
             <div></div>
             <div></div>
             <div></div>
         </div>
-    </div>   -->
+    </div>  
     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand"><h2>Southern <em>Institute</em></h2></a>
+          <a class="navbar-brand" href="index.html"><h2>SOUTHERN  <em>INSTITUTE</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url();?>index.php/Welcome/index">Home
+                <a class="nav-link" href="index.html">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -108,16 +108,16 @@ https://templatemo.com/tm-541-host-cloud
     <!-- Banner Ends Here -->
 
     <!-- Trusted Starts Here -->
-    <div class="trusted-section">
+    <!-- <div class="trusted-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <!-- <div class="trusted-section-heading">
+        <div class="row"> -->
+          <!-- <div class="col-md-12">
+            <div class="trusted-section-heading">
               <h4>TRUSTED BY 1,250+ HAPPY CUSTOMERS WORLDWIDE</h4>
-            </div> -->
+            </div>
           </div>
           <div class="col-md-12">
-            <!-- <div class="owl-trusted owl-carousel">
+            <div class="owl-trusted owl-carousel">
               <div class="trusted-item">
                 <img src="assets/images/trusted-01.png" alt="trusted 1">
               </div>
@@ -139,11 +139,11 @@ https://templatemo.com/tm-541-host-cloud
               <div class="trusted-item">
                 <img src="assets/images/trusted-01.png" alt="trusted 7">
               </div>
-            </div> -->
-          </div>
-        </div>
+            </div>
+          </div> -->
+        <!-- </div>
       </div>
-    </div>
+    </div> -->
     <!-- Trusted Ends Here -->
 
 
@@ -153,34 +153,32 @@ https://templatemo.com/tm-541-host-cloud
         <div class="row">
           <div class="col-md-12">
             <div class="section-heading">
-              <!-- <span>Providing The Best Education</span> -->
-               <h2>BECOME KNOWLEDGABLE FUTURE LEADERS MOULDED BY SOUTHERN  </h2> 
-              
-            </div>
+              <!-- <span>Hosting Services</span> -->
+              <h2>BECOME KNOWLEDGABLE FUTURE LEADERS MOULDED BY SOUTHERN</h2>
+              <!-- <p>Host Cloud is a professional Bootstrap 4 template by TemplateMo for your hosting company websites. There are 4 HTML pages included in this template. You can feel free to customize anything. Please share this template to your friends. Thank you.</p>
+             -->
+			</div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="service-item">
               <i class="fa fa-database"></i>
-              <!-- <h4>10x Light Cloud</h4> -->
               <h4>PROVIDING THE BEST EDUCATION</h4>
-              <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.We are diverse, welcoming, accepting and passionate about being best we can be.
-               Join us to make your higher education experience unforgettable.</p>
+              <p>We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one. Parents are assured of the safety of their children of our institute and discipline of utmost important to us. We are diverse, welocoming, accepting and passioate about being best we can be. Join us to make your higher education experience unforgettable.  </p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="service-item">
               <i class="fa fa-database"></i>
               <h4>BEST PERFORMANCE</h4>
-              <p>Top performers in Ordinary Level Examination.<p>
-              <p>Top performers in Advanced Level Examination. </p>
-              
+              <p>Top performers in Ordinary Level Examination.</p>
+			  <p>Top performers in Advanced Level Examination</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="service-item">
               <i class="fa fa-database"></i>
               <h4>OUR LECTURERS</h4>
-              <p>Our lecturers are qualifed, well experienced and recognized in their respective fields.</p>
+              <p>Our lecturers are qualified, well experienced and recognized in threir respective fields.</p>
             </div>
           </div>
         </div>
@@ -388,12 +386,12 @@ https://templatemo.com/tm-541-host-cloud
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="footer-item">
               <div class="footer-heading">
-                <h2>Gallery</h2>
-                    <!-- <img src="<?php echo base_url();?>assets\images\pic.jpg" width="500" height="100"> -->
+                <h2>Gallery</h2>  <div class="user-image"><img src="<?php echo base_url();?>assets\images\pic.jpg" alt="user" class="img-responsive" height="100" width="200" /></div>
+
               </div>
               <!-- <p>Host Cloud is provided by TemplateMo for free of charge. Anyone can download and use this CSS Bootstrap template for commercial purposes.</p>
              -->
-            </div>
+			</div>
           </div>
           
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -401,8 +399,8 @@ https://templatemo.com/tm-541-host-cloud
               <div class="footer-heading">
                 <h2>Visit Us</h2>
               </div>
-              <ul class="footer-list">
-                  <li>Southern Institute Galle</li>
+               <ul class="footer-list">
+			   <li>Southern Institute Galle</li>
                   <li>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</li>
                   <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
                       <img src="<?php echo base_url();?>assets\images\map.png">
@@ -412,8 +410,9 @@ https://templatemo.com/tm-541-host-cloud
                 <li><a href="#">Cloud VPS 10X</a></li>
                 <li><a href="#">Advanced Cloud</a></li>
                 <li><a href="#">Custom Designs</a></li>
-                <li><a href="#">Special Solutions</a></li> -->
-              </ul>
+                <li><a href="#">Special Solutions</a></li>
+              -->
+			  </ul> 
             </div>
           </div>
           
@@ -424,7 +423,7 @@ https://templatemo.com/tm-541-host-cloud
                 <h2>Useful Links</h2>
               </div>
               <ul class="footer-list">
-                  <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+			  <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
                   <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
                   <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
                   <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
@@ -432,8 +431,9 @@ https://templatemo.com/tm-541-host-cloud
                 <li><a href="#">Light Speed Zone</a></li>
                 <li><a href="#">Content Delivery Network</a></li>
                 <li><a href="#">Customer Support</a></li>
-                <li><a href="#">Latest News</a></li> -->
-              </ul>
+                <li><a href="#">Latest News</a></li>
+              -->
+			  </ul>
             </div>
           </div>
           
@@ -443,17 +443,14 @@ https://templatemo.com/tm-541-host-cloud
                 <h2>More Information</h2>
               </div>
               <ul class="footer-list">
-                <li>Phone: <a href="#">0912 242 189</a></li>
-                <!-- <li>Email: <a href="#">mail@company.com</a></li>
-                <li>Support: <a href="#">support@company.com</a></li>
-                <li>Website: <a href="#">www.company.com</a></li> -->
-              </ul>
+			  <li>Phone: <a href="#">0912 242 189</a></li>
+			    </ul>
             </div>
           </div>
           <div class="col-md-12">
             <div class="sub-footer">
               <p>Copyright &copy; Team Innoview
-				- Designed by <a rel="nofollow" href="<?php echo base_url();?>https://templatemo.com">Chamo</a></p>
+				- Designed by <a rel="nofollow" href="https://templatemo.com"></a></p>
             </div>
           </div>
         </div>
@@ -462,13 +459,13 @@ https://templatemo.com/tm-541-host-cloud
     <!-- Footer Ends Here -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<?php echo base_url();?>vendor/jquery/jquery.min.js"></script>
-    <script src="<?php echo base_url();?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Additional Scripts -->
-    <script src="<?php echo base_url();?>assets/js/custom.js"></script>
-    <script src="<?php echo base_url();?>assets/js/owl.js"></script>
-    <script src="<?php echo base_url();?>assets/js/accordions.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/accordions.js"></script>
 
 
     <script language = "text/Javascript"> 

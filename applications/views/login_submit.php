@@ -37,20 +37,46 @@ if(isset($_POST['submit'])){
             if($user_type == '1' ){
                 // header( "Location:admin.php" );
                 // redirect(base_url('application\views\admin.php'));
-                $this->load->view('login_submit/admin');
+                $this->load->view('admin');
                 // $message = "Username and/or Password incorrect.\\nTry again.";
                 // echo "<script type='text/javascript'>alert('$message');</script>";
             }
-           
+            // }else{
+            //     $message = "Username and/or Password incorrect.\\nTry again.";
+            //     echo "<script type='text/javascript'>alert('$message');</script>";
+            // }
+            // else{
+            //     $this->load->view('login');
+            // }
+            // elseif ($user_type == 'c'){
+            //     header( "Location:customer-dashboard.php" );
+            // }
+            // elseif ($user_type='v'){
+            //     header( "Location:vendor-dashboard.php" );
+            // }
+            
+                // $message = base64_encode(urlencode("Invalid Email or Password"));
+                // header('Location:login.php?msg=' . $message);
+                // exit();
            
     }
     else{ 
-       
+        // $this->load->view('login');
+        // System.out.println("alert('Login fail.')");
+        // $this->load->view('admin');
+        // $this->load->view('login');
         $message = "Username and/or Password incorrect.\\nTry again.";
         echo "<script type='text/javascript'>alert('$message');</script>";
         // exit($this->load->view('login'));
         redirect(base_url().'index.php/Welcome/login','refresh');
-        
+        // print_r("Wrong");
+        // if(empty($user_name)) {array_push($errors, "User Name is Required")};
+        // if(empty($password)) {array_push($errors, "Password is Required")};            
+            
+        // $this->load->view('login');      
+        // $message = base64_encode(urlencode("Invalid Email or Password"));
+        // header('Location:login.php?msg=' . $message);
+        // exit();
     }
     
 }

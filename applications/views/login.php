@@ -1,5 +1,5 @@
 <?php include('includes/connection.php') ?>
-<?php include('includes/session.php') ?>
+<?php include('includes/session.php') ?> 
 
 
 <!DOCTYPE html>
@@ -30,6 +30,9 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/main.css">
 <!--===============================================================================================-->
+	
+
+
 </head>
 <body>
 	
@@ -37,7 +40,7 @@
 		<div class="container-login100" style="background-image: url('<?php echo base_url();?>assets/images/uni.jpg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">
-               
+				<!-- <form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">  -->
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
 					</span>
