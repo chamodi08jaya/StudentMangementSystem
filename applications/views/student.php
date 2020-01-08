@@ -5,7 +5,7 @@
 <?php
 	//Unauthorized Access Check
     // checkSession();
-    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != '1'){
+    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'Student'){
        $message = base64_encode(urlencode("Please Login"));
        header('Location:login.php?msg=' . $message);
        exit();
@@ -21,7 +21,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Admin Dashboard - Home</title>
+    <title> Student-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -47,7 +47,7 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1> Admin</h1>
+          <h1> Student</h1>
         </header>
         <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  

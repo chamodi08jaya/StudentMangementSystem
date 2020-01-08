@@ -1,10 +1,11 @@
 <?php
-
+    echo "hello";
 include('includes/connection.php');
 include('includes/session.php');
 
 if(isset($_POST['submit'])){
-	
+    echo "hello";
+
     //Assign data from login form to variables
 	$user_name = $_POST['user_name'];
 	$password = $_POST['password'];
@@ -37,11 +38,10 @@ if(isset($_POST['submit'])){
             if($user_type == '1' ){
                 // header( "Location:admin.php" );
                 // redirect(base_url('application\views\admin.php'));
+         
                 $this->load->view('admin');
                 // $message = "Username and/or Password incorrect.\\nTry again.";
                 // echo "<script type='text/javascript'>alert('$message');</script>";
-            }elseif($user_type == "Student"){
-                $this->load->view('student');
             }
             // }else{
             //     $message = "Username and/or Password incorrect.\\nTry again.";
@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
             // elseif ($user_type == 'c'){
             //     header( "Location:customer-dashboard.php" );
             // }
-            // elseif ($user_type='v'){v
+            // elseif ($user_type='v'){
             //     header( "Location:vendor-dashboard.php" );
             // }
             

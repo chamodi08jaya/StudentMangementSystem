@@ -2,6 +2,8 @@
 <?php include('includes/session.php') ?> 
 
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +31,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/main.css">
+
+	<script type="text/javascript" src="assets\js\login.js"></script>
+
 <!--===============================================================================================-->
 	
 
@@ -39,7 +44,10 @@
 	<div class="limiter">
 		<div class="container-login100" style="background-image: url('<?php echo base_url();?>assets/images/uni.jpg');">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form" action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">
+				<!-- <form class="login100-form validate-form" action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">
+				 -->
+				 <div class="form-bottom">
+                 <form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post"> 
 				<!-- <form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">  -->
 					<span class="login100-form-logo">
 						<i class="zmdi zmdi-landscape"></i>
@@ -69,9 +77,11 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" onclick='loginform()'>
+					   <input class="login100-form-btn" type="submit" name="submit" value="LOGIN" onclick='loginform()'></input>
+					   	
+						<!-- <button class="login100-form-btn" onclick='loginform()'>
 							Login
-						</button>
+						</button> -->
 					</div>
 
 					<div class="text-center p-t-90">
@@ -80,6 +90,7 @@
 						</a>
 					</div>
 				</form>
+				</div>
 			</div>
 		</div>
 	</div>
