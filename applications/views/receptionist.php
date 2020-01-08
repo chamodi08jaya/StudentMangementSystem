@@ -5,7 +5,7 @@
 <?php
 	//Unauthorized Access Check
     // checkSession();
-    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != '1'){
+    if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != 'Receptionst'){
        $message = base64_encode(urlencode("Please Login"));
        header('Location:login.php?msg=' . $message);
        exit();
@@ -21,7 +21,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Admin Dashboard - Home</title>
+    <title> Receptionist-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -47,10 +47,10 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1> Admin</h1>
+          <h1> Student</h1>
         </header>
         <div class="profile-photo-container">
-          <img src="<?php echo base_url();?>assets/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="<?php echo base_url();?>assets/images/team-02.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
         </div>      
         <!-- Search box -->
@@ -66,14 +66,11 @@
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
-            <!-- <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
-            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
+            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
-            <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
             <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>

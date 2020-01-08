@@ -42,9 +42,17 @@ class Welcome extends CI_Controller {
 	
 	public function login_submit()
 	{
+		// print("bchdvbubvy");
 		$this->load->view('login_submit');
 		// $this->load->view('admin');
 		
+	}
+	public function admin(){
+		$this->load->view('admin');
+		
+	}
+	public function sturegistrations(){
+		$this->load->view('sturegistrations');
 	}
 
 	
