@@ -10,7 +10,6 @@
        header('Location:login.php?msg=' . $message);
        exit();
        }
-
 ?>
 
 
@@ -66,7 +65,7 @@
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/editusers"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
@@ -81,10 +80,10 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Admin panel</a></li>
-                <li><a href="">Dashboard</a></li>
+                <li><a href="" class="active">Student panel</a></li>
+                <!-- <li><a href="">Dashboard</a></li>
                 <li><a href="">Overview</a></li>
-                <li><a href="login.html">Sign in form</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
@@ -235,7 +234,6 @@
       -------------------------------------------------------------------*/
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
-
       // Set a callback to run when the Google Visualization API is loaded.
       google.setOnLoadCallback(drawChart); 
       
@@ -243,7 +241,6 @@
       // instantiates the pie chart, passes in the data and
       // draws it.
       function drawChart() {
-
           // Create the data table.
           var data = new google.visualization.DataTable();
           data.addColumn('string', 'Topping');
@@ -255,18 +252,14 @@
             ['Zucchini', 1],
             ['Pepperoni', 2]
           ]);
-
           // Set chart options
           var options = {'title':'How Much Pizza I Ate Last Night'};
-
           // Instantiate and draw our chart, passing in some options.
           var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
           pieChart.draw(data, options);
-
           var barChart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
           barChart.draw(data, options);
       }
-
       $(document).ready(function(){
         if($.browser.mozilla) {
           //refresh page on browser resize

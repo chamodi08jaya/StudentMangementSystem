@@ -1,23 +1,9 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see https://codeigniter.com/user_guide/general/urls.html
-	 */
 	public function index()
 	{
 		$this->load->view('welcome');
@@ -42,9 +28,15 @@ class Welcome extends CI_Controller {
 	
 	public function login_submit()
 	{
-		// print("bchdvbubvy");
+		//  print("bchdvbubvy");
 		$this->load->view('login_submit');
+
 		// $this->load->view('admin');
+
+		
+
+    
+
 		
 	}
 	public function admin(){
@@ -54,6 +46,38 @@ class Welcome extends CI_Controller {
 	public function sturegistrations(){
 		$this->load->view('sturegistrations');
 	}
+
+	public function tearegistrations(){
+		$this->load->view('tearegistrations');
+	}
+
+	public function recepregistrations(){
+		$this->load->view('recepregistrations');
+	}
+
+	public function editusers(){
+		$this->load->view('editusers');
+	}
+
+	public function editcourses(){
+		$this->load->view('editcourses');
+	}
+
+	public function logout(){
+		// $this->load->view('logout');
+		if (isset($_SESSION['user_name'])){
+			session_unset($_SESSION["user_name"]);
+			session_unset($_SESSION["user_type"]);
+			session_unset($_SESSION["user_id"]);
+			$message = base64_encode(urlencode(("Logged Out Successfully")));
+			
+			header('Location:login.php?msg=' . $message);
+			exit();
+		}	
+	}
+	// public function teacherregistrations{
+	// 	$this->load->view('teacherregistrations');
+	// }
 
 	
 	
