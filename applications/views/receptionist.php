@@ -71,7 +71,8 @@
             <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
             <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
-            <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+         
           </ul>  
         </nav>
       </div>

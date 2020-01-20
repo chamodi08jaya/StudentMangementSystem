@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Student-Dashboard Home</title>
+    <title> Teacher-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -33,10 +33,10 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1>Student</h1>
+          <h1>Teacher</h1>
         </header>
         <div class="profile-photo-container">
-          <img src="<?php echo base_url();?>assets/images/team-02.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="<?php echo base_url();?>assets/images/Teacher.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>      
         </div>      
         <!-- Search box -->
@@ -51,15 +51,14 @@
           </div>
         <nav class="templatemo-left-nav">          
         <ul>
-            <li><a a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/teacher"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/notification"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/teacher_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li> -->
             <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/attendence"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
+            <!-- <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li> -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
-          
           </ul>  
         </nav>
       </div>
@@ -69,7 +68,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Student panel</a></li>
+                <li><a href="" class="active">Teacher panel</a></li>
                 <!-- <li><a href="">Dashboard</a></li>
                 <li><a href="">Overview</a></li>
                 <li><a href="login.html">Sign in form</a></li> -->

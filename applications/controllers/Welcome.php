@@ -63,6 +63,30 @@ class Welcome extends CI_Controller {
 		$this->load->view('editcourses');
 	}
 
+	public function edit_teacher(){
+		$this->load->view('edit_teacher');
+	}
+
+	public function students(){
+		$this->load->view('student');
+	}
+	public function payment(){
+		$this->load->view('payment');
+	}
+	public function attendence(){
+		$this->load->view('attendence');
+	}
+	public function notification(){
+		$this->load->view('notification');
+	}
+	public function teacher_noti(){
+		$this->load->view('teacher_noti');
+	}
+	public function teacher(){
+		$this->load->view('teacher');
+	}
+	
+	
 	public function logout(){
 		// $this->load->view('logout');
 		if (isset($_SESSION['user_name'])){
