@@ -86,6 +86,33 @@ class Welcome extends CI_Controller {
 		$this->load->view('teacher');
 	}
 	
+	public function receptionist(){
+		$this->load->view('receptionist');
+	}
+
+	public function edit_recep(){
+		$this->load->view('edit_recep');
+	}
+	
+	public function recep_noti(){
+		$this->load->view('recep_noti');
+	}
+
+	public function recep_pay(){
+		$this->load->view('recep_pay');
+	}
+
+	public function recep_hall(){
+		$this->load->view('recep_hall');
+	}
+
+	public function recep_attend(){
+		$this->load->view('recep_attend');
+	}
+
+	public function recep_stu(){
+		$this->load->view('recep_stu');
+	}
 	
 	public function logout(){
 		// $this->load->view('logout');
