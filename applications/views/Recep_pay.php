@@ -35,17 +35,17 @@
           <div class="square"></div>
           <h1>Receptionist</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/Receptionist.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div>       -->
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
@@ -56,9 +56,7 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="#" class="active"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_attend"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_stu"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+           <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>        
        
@@ -70,7 +68,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Receptionist panel</a></li>
+                <li><a href="" class="active">Payment</a></li>
                 
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
               </ul>  

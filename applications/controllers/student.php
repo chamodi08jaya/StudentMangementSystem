@@ -6,6 +6,9 @@ class Admin extends CI_Controller {
 	public function index(){
 		$this->load->view('home');
 	}
+	public function view_booking(){
+		$this->load->view('view_booking');
+	}
 	
 	
 }

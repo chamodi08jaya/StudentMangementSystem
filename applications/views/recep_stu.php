@@ -49,17 +49,17 @@
           <div class="square"></div>
           <h1> Receptionist</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/receptionist.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div>       -->
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
         </div>
@@ -69,9 +69,10 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_attend"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/recep_attend"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
             <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+             -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>  

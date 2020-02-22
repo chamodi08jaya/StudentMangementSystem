@@ -16,15 +16,7 @@
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
-    
-  
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+ 
 
   </head>
   <body>  
@@ -35,17 +27,7 @@
           <div class="square"></div>
           <h1>Student</h1>
         </header>
-        <div class="profile-photo-container">
-          <img src="<?php echo base_url();?>assets/images/team-02.jpg" alt="Profile Photo" class="img-responsive">  
-          <div class="profile-photo-overlay"></div>      
-        </div>      
-        <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
-          <div class="input-group">
-              <button type="submit" class="fa fa-search"></button>
-              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
-          </div>
-        </form>
+      
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
@@ -53,11 +35,9 @@
         <ul>
             <li><a a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/notification"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/attendence"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+             <li><a href="<?php echo base_url();?>index.php/Welcome/stu_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/stu_coursecontent"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
+           <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           
           </ul>  
@@ -67,396 +47,197 @@
       <div class="templatemo-content col-1 light-gray-bg">
         <div class="templatemo-top-nav-container">
           <div class="row">
+
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Student panel</a></li>
-                <!-- <li><a href="">Dashboard</a></li>
-                <li><a href="">Overview</a></li>
-                <li><a href="login.html">Sign in form</a></li> -->
-              </ul>
-            </nav> 
+                <li><a href="" class="active">My Profile</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/edit_student">Edit Profile</a></li>
+                
+              </ul>  
+            </nav>
+
           </div>
         </div>
-        <div class="templatemo-content-container">
-          <div class="templatemo-content-widget no-padding">
-          <div class="text-center text-sm-left mb-2 mb-sm-0">
-                    <h4 class="pt-sm-2 pb-1 mb-0 text-nowrap">John Smith</h4>
-                    <p class="mb-0">@johnny.s</p>
-                    <div class="text-muted"><small>Last seen 2 hours ago</small></div>
-                    <div class="mt-2">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fa fa-fw fa-camera"></i>
-                        <span>Change Photo</span>
-                      </button>
-                    </div>
-                  </div>
-                  <ul class="nav nav-tabs">
-                <li class="nav-item"><a href="" class="active nav-link">Settings</a></li>
-              </ul>
-              <div class="tab-content pt-3">
-                <div class="tab-pane active">
-                  <form class="form" novalidate="">
-                    <div class="row">
-                      <div class="col">
-                        <!-- <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Full Name</label>
-                              <input class="form-control" type="text" name="name" placeholder="John Smith" value="John Smith">
-                            </div>
-                          </div> -->
-                          <div class="row form-group">
-                          <div class="col-lg-6 col-md-6 form-group">                  
-                          <label for="inputFirstName">First Name</label>
-                          <input type="text" class="form-control" id="inputFirstName" placeholder="John">                  
-                           </div>
-                         <div class="col-lg-6 col-md-6 form-group">                  
-                          <label for="inputLastName">Last Name</label>
-                           <input type="text" class="form-control" id="inputLastName" placeholder="Smith">                  
-                          </div> 
-                           </div>
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Username</label>
-                              <input class="form-control" type="text" name="username" placeholder="johnny.s" value="johnny.s">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Email</label>
-                              <input class="form-control" type="text" placeholder="user@example.com">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- <div class="row">
-                          <div class="col mb-3">
-                            <div class="form-group">
-                              <label>About</label>
-                              <textarea class="form-control" rows="5" placeholder="My Bio"></textarea>
-                            </div>
-                          </div>
-                        </div> -->
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                <div class="col-lg-6 col-md-6 form-group">                  
-                    <label for="inputCurrentPassword">Current Password</label>
-                    <input type="password" class="form-control " id="inputCurrentPassword" placeholder="*********************">                  
-                </div>                
-              </div>
-              <div class="row form-group">
-                <div class="col-lg-6 col-md-6 form-group">                  
-                    <label for="inputNewPassword">New Password</label>
-                    <input type="password" class="form-control" id="inputNewPassword" placeholder="••••••">
-                </div>
-                <div class="col-lg-6 col-md-6 form-group">                  
-                    <label for="inputConfirmNewPassword">Confirm New Password</label>
-                    <input type="password" class="form-control" id="inputConfirmNewPassword" placeholder="••••••">
-                </div> 
-              </div>
-                    <!-- <div class="row">
-                      <div class="col-12 col-sm-6 mb-3">
-                        <div class="mb-2"><b>Change Password</b></div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Current Password</label>
-                              <input class="form-control" type="password" placeholder="••••••">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>New Password</label>
-                              <input class="form-control" type="password" placeholder="••••••">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col">
-                            <div class="form-group">
-                              <label>Confirm <span class="d-none d-xl-inline">Password</span></label>
-                              <input class="form-control" type="password" placeholder="••••••"></div>
-                          </div>-->
-                        </div> 
-                      </div>
-                     
-                      <!-- <div class="col-12 col-sm-5 offset-sm-1 mb-3">
-                        <div class="mb-2"><b>Keeping in Touch</b></div>
-                        <div class="row">
-                          <div class="col">
-                            <label>Email Notifications</label>
-                            <div class="custom-controls-stacked px-2">
-                              <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="notifications-blog" checked="">
-                                <label class="custom-control-label" for="notifications-blog">Blog posts</label>
-                              </div>
-                              <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="notifications-news" checked="">
-                                <label class="custom-control-label" for="notifications-news">Newsletter</label>
-                              </div>
-                              <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="notifications-offers" checked="">
-                                <label class="custom-control-label" for="notifications-offers">Personal Offers</label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-                    </div>
-                    <div class="row">
-                    <div class="form-group text-right">
-                    <!-- <div class="col d-flex justify-content-end"> -->
-                    <button type="submit" class="templatemo-blue-button">Update</button>
-                    <button type="reset" class="templatemo-white-button">Reset</button>
-                   </div> 
-                      <!-- <div class="col d-flex justify-content-end">
-                        <button class="btn btn-primary" type="submit">Save Changes</button>
-                      </div> -->
-                    </div>
-                  </form>
 
-                </div>
-              </div>
-                  <!-- <div class="text-center text-sm-right">
-                    <span class="badge badge-secondary">administrator</span>
-                    <div class="text-muted"><small>Joined 09 Dec 2017</small></div>
-                  </div>
-                </div>
-              </div> -->
-            <!-- <div class="panel panel-default table-responsive">
-              <table class="table table-striped table-bordered templatemo-user-table">
-                <thead>
-                  <tr>
-                    <td><a href="" class="white-text templatemo-sort-by"># <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">First Name <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Last Name <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">User Name <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Email <span class="caret"></span></a></td>
-                    <td>Edit</td>
-                    <td>Action</td>
-                    <td>Delete</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1.</td>
-                    <td>John</td>
-                    <td>Smith</td>
-                    <td>@jS</td>
-                    <td>js@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>2.</td>
-                    <td>Bill</td>
-                    <td>Jones</td>
-                    <td>@bJ</td>
-                    <td>bj@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>3.</td>
-                    <td>Mary</td>
-                    <td>James</td>
-                    <td>@mJ</td>
-                    <td>mj@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td>Steve</td>
-                    <td>Bride</td>
-                    <td>@sB</td>
-                    <td>sb@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>5.</td>
-                    <td>Paul</td>
-                    <td>Richard</td>
-                    <td>@pR</td>
-                    <td>pr@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>  
-                   <tr>
-                    <td>6.</td>
-                    <td>Will</td>
-                    <td>Brad</td>
-                    <td>@wb</td>
-                    <td>wb@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>  
-                   <tr>
-                    <td>7.</td>
-                    <td>Steven</td>
-                    <td>Eric</td>
-                    <td>@sE</td>
-                    <td>se@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>  
-                   <tr>
-                    <td>8.</td>
-                    <td>Landi</td>
-                    <td>Susan</td>
-                    <td>@lS</td>
-                    <td>ls@company.com</td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>                    
-                </tbody>
-              </table>    
-            </div>                           -->
-         <!-- / </div>           -->
-          <!-- <div class="templatemo-flex-row flex-content-row">
-            <div class="col-1">
-              <div class="panel panel-default margin-10">
-                <div class="panel-heading"><h2 class="text-uppercase">Login Form</h2></div>
-                <div class="panel-body">
-                  <form action="index.html" class="templatemo-login-form">
-                    <div class="form-group">
-                      <label for="inputEmail">Email address</label>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">                      
-                      <label for="inputEmail">Password</label>
-                      <input type="password" class="form-control" placeholder="Enter password">                                 
-                    </div>              
-                    <div class="form-group">
-                        <div class="checkbox squaredTwo">
-                            <label>
-                              <input type="checkbox"> Remember me
-                            </label>
-                        </div>            
-                    </div>
-                    <div class="form-group">
-                      <button type="submit" class="templatemo-blue-button">Submit</button>
-                    </div>
-                  </form>
-                </div>                
-              </div>              
-            </div> -->
-            <!-- <div class="col-1">              
-              <div class="templatemo-content-widget pink-bg">
-                <i class="fa fa-times"></i>                
-                <h2 class="text-uppercase margin-bottom-10">Latest Data</h2>
-                <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi sapien, fringilla at orci nec, viverra rhoncus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus erat non purus commodo, sit amet varius dolor sagittis.</p>                  
-              </div>            
-              <div class="templatemo-content-widget blue-bg">
+        <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
                 <i class="fa fa-times"></i>
-                <h2 class="text-uppercase margin-bottom-10">Older Data</h2>
-                <p class="margin-bottom-0">Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur. Aliquam convallis pharetra odio, in convallis erat molestie sed. Fusce mi lacus, semper sit amet mattis eu, volutpat vitae enim.</p>                
-              </div>            
-            </div>                        -->
-          <!-- </div> -->
-           <!-- Second row ends -->
-          <!-- <div class="templatemo-flex-row flex-content-row"> -->
-            <!-- <div class="templatemo-content-widget white-bg col-2">
-              <i class="fa fa-times"></i> -->
-              <!-- <div class="media margin-bottom-30">
-                <div class="media-left padding-right-25">
-                  <a href="#">
-                    <img class="media-object img-circle templatemo-img-bordered" src="images/person.jpg" alt="Sunset">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h2 class="media-heading text-uppercase blue-text">John Barnet</h2>
-                  <p>Project Manager</p>
-                </div>        
-              </div> -->
-              <!-- <div class="table-responsive">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td><div class="circle green-bg"></div></td>
-                      <td>New Task Issued</td>
-                      <td>02</td>                    
-                    </tr> 
-                    <tr>
-                      <td><div class="circle pink-bg"></div></td>
-                      <td>Task Pending</td>
-                      <td>22</td>                    
-                    </tr>  
-                    <tr>
-                      <td><div class="circle blue-bg"></div></td>
-                      <td>Inbox</td>
-                      <td>13</td>                    
-                    </tr>  
-                    <tr>
-                      <td><div class="circle yellow-bg"></div></td>
-                      <td>New Notification</td>
-                      <td>18</td>                    
-                    </tr>                                      
-                  </tbody>
-                </table>
-              </div>              -->
-            <!-- </div> -->
-            <!-- <div class="templatemo-content-widget white-bg col-1 text-center templatemo-position-relative">
-              <i class="fa fa-times"></i>
-              <img src="images/person.jpg" alt="Bicycle" class="img-circle img-thumbnail margin-bottom-30">
-              <h2 class="text-uppercase blue-text margin-bottom-5">Paul Smith</h2>
-              <h3 class="text-uppercase margin-bottom-70">Managing Director</h3>
-              <div class="templatemo-social-icons-container">
-                <div class="social-icon-wrap">
-                  <i class="fa fa-facebook templatemo-social-icon"></i>  
-                </div>
-                <div class="social-icon-wrap">
-                  <i class="fa fa-twitter templatemo-social-icon"></i>  
-                </div>
-                <div class="social-icon-wrap">
-                  <i class="fa fa-google-plus templatemo-social-icon"></i>  
-                </div>                
+               
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">My Profile</h2></div>
+                <!-- <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div> -->
+          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
+                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                
+                    <div class="form-box">
+                        <div class="form-top">
+                        </div>
+                        <div class="form-bottom">
+                        <form>
+                        <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1" ><i>   Student Id</i> </span>
+                                    
+                                 
+                                   
+                                  
+
+                                      <span class="form-control" name="student_id" > 
+                                    <?php
+                                          echo $_SESSION['user_id'] ;
+                                     ?>
+                                     </span>        
+                                </div>
+                           
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i>   User Name</i> </span>
+                                    
+                                
+<!-- 
+                                     User Name -->
+                                      <span class="form-control" name="user_name" > 
+                                    <?php
+                                          echo $_SESSION['user_name'] ;
+                                     ?>
+                                     </span>        
+                                </div>
+                           
+                                
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i> Name</i> </span>
+                                    
+                                     <!-- Name -->
+                                      <span class="form-control" name="name" > 
+                                      <?php
+                                         $result=$this->db->query("SELECT first_name FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->first_name."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                 </div>
+                                
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i>  Address</i> </span>
+                                    
+                                     <!-- Address -->
+                                      <span class="form-control" name="address" > 
+                                    <?php
+                                         $result=$this->db->query("SELECT address FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->address."</option>";
+                                          }
+                                      ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i> Contact Number</i> </span>
+                                    
+                                     <!-- Contact Number -->
+                                      <span class="form-control" name="contact_no" > 
+                                    <?php
+                                         $result=$this->db->query("SELECT contact_no FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->contact_no."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i>  Date of Birthday</i> </span>
+                                    
+                                     <!-- date of Birthday -->
+                                     <span class="form-control" name="date_of_birth" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT date_of_birth FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->date_of_birth."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i> Email Address</i> </span>
+                                    
+                                     <!-- Email Address -->
+                                     <span class="form-control" name="email_address" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT email_address FROM student Where student_id='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->email_address."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i>  Students Parents Name</i> </span>
+                                    
+                                     <!-- Student Parents Name -->
+                                     <span class="form-control" name="name" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT name FROM student_parent Where studentid_fk='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->name."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                <span class="input-group-addon" id="basic-addon1" ><i> Student Parents Cntact Number</i> </span>
+                                    
+                                     <!-- Student Parents Contact Number -->
+                                     <span class="form-control" name="name" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT contact_no FROM student_parent Where studentid_fk='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->contact_no."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+
+   
+                
+            </table>  
+
+            
+                              
+                                
+                            </form>       
+                  
+	             </div>
+                    
+
+            </div>
+
+
+    </section>
+
+     
               </div>
-            </div> -->
-            <!-- <div class="templatemo-content-widget white-bg col-1 templatemo-position-relative templatemo-content-img-bg">
-              <img src="images/sunset-big.jpg" alt="Sunset" class="img-responsive content-bg-img">
-              <i class="fa fa-heart"></i>
-              <h2 class="templatemo-position-relative white-text">Sunset</h2>
-              <div class="view-img-btn-wrap">
-                <a href="" class="btn btn-default templatemo-view-img-btn">View</a>  
-              </div>              
-            </div> -->
-          <!-- </div> -->
-          <!-- <div class="pagination-wrap">
-            <ul class="pagination">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="fa fa-play"></i></span>
-                </a>
-              </li>
-            </ul>
-          </div>           -->
+            </div>
+          </div>
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
-            | Design: UCSC</p>
+            | UCSC</p>
           </footer>         
         </div>
       </div>
     </div>
-    
+   
+      
     <!-- JS -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
     <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->

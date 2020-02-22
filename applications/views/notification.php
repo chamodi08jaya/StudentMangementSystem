@@ -57,7 +57,7 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/editusers"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/attendence"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          

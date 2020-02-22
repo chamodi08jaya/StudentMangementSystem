@@ -2,12 +2,10 @@
 <?php require_once('includes/session.php'); ?>
 
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,66 +28,46 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/main.css">
-
-	<script type="text/javascript" src="assets\js\login.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/main.css">
+    
+    <script type="text/javascript" src="assets\js\login.js"></script>
 
 <!--===============================================================================================-->
-	
-
-
 </head>
 <body>
 	
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('<?php echo base_url();?>assets/images/uni.jpg');">
-			<div class="wrap-login100">
-				<!-- <form class="login100-form validate-form" action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">
-				 -->
-				 <div class="form-bottom">
-                 <form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post"> 
-				<!-- <form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">  -->
-					<span class="login100-form-logo">
-						<i class="zmdi zmdi-landscape"></i>
-					</span>
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-85 p-b-20">
+				<div class="login100-form">
+					<form action="<?php echo base_url();?>index.php/Welcome/login_submit" method="post">
+						<a class="login100-form-title" href="<?php echo base_url();?>index.php">SOUTHERN INSTITUTE
+                  			<span class="login100-form-title p-b-70"></span>
+               			</a>
 
-					<span class="login100-form-title p-b-34 p-t-27">
-						Log in
-					</span>
+						<div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate = "Enter User ID">
+							<input class="input100" type="text" name="user_id">
+							<span class="focus-input100" data-placeholder="User ID"></span>
+						</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Enter username">
-                        <!-- <input type="text" id="user_name" name="user_name" class="form-control" placeholder="username" aria-describedby="basic-addon1" required="required">
-                                         -->
-						<input class="input100" type="text" name="user_name" placeholder="Username" required="required">
-						<span class="focus-input100" data-placeholder="&#xf207;"></span>
-					</div>
+						<div class="wrap-input100 validate-input m-b-50" data-validate="Enter password">
+							<input class="input100" type="password" name="password">
+							<span class="focus-input100" data-placeholder="Password"></span>
+						</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<input class="input100" type="password" name="password" placeholder="Password" required="required">
-						<span class="focus-input100" data-placeholder="&#xf191;"></span>
-					</div>
-
-					<div class="contact100-form-checkbox">
-						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-						<label class="label-checkbox100" for="ckb1">
-							Remember me
-						</label>
-					</div>
-
-					<div class="container-login100-form-btn">
-					   <input class="login100-form-btn" type="submit" name="submit" value="LOGIN" onclick='loginform()'></input>
-					   	
-						<!-- <button class="login100-form-btn" onclick='loginform()'>
-							Login
-						</button> -->
-					</div>
-
-					<div class="text-center p-t-90">
-						<a class="txt1" href="#">
-							Forgot Password?
-						</a>
-					</div>
-				</form>
+						<div class="container-login100-form-btn">
+						<input class="login100-form-btn" type="submit" name="submit" value="LOGIN" onclick='loginform()'></input>
+							<!--button class="login100-form-btn">
+								Login
+							</button-->
+						</div>
+						<!-- <div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div> -->
+					</form>
 				</div>
 			</div>
 		</div>

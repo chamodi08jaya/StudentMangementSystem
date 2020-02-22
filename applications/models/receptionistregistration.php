@@ -3,8 +3,11 @@
 class Receptionistregistration extends CI_Model{
 
 public function registeruser(){
+    $id = $this->input->post('emp_no');
+	$query1 = $this->db->query("SELECT * FROM receptionist WHERE emp_no='$id'");
+	if($query1->result()) return false;
 $data1 = array(
-'user_id'=> $this->input->post('receptionist_id'),
+'user_id'=> $this->input->post('emp_no'),
 'user_type'=> $this->input->post('user_type'),
 'user_name'=> $this->input->post('user_name'),
 'password'=> $this->input->post('password'),
@@ -22,4 +25,3 @@ $this->db->insert('receptionist',$data2);
 }
 
 }?>
-© 2020 GitHub, Inc.

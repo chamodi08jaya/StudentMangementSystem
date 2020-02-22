@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Student-Dashboard Home</title>
+    <title> Receptionist-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -16,15 +16,7 @@
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
-    
   
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
   </head>
   <body>  
@@ -33,30 +25,22 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1>Student</h1>
+          <h1>Receptionist</h1>
         </header>
-        <div class="profile-photo-container">
-          <img src="<?php echo base_url();?>assets/images/team-02.jpg" alt="Profile Photo" class="img-responsive">  
-          <div class="profile-photo-overlay"></div>
-        </div>      
-        <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
-          <div class="input-group">
-              <button type="submit" class="fa fa-search"></button>
-              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
-          </div>
-        </form>
+       
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
         <nav class="templatemo-left-nav">          
         <ul>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/editusers"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/notification"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="#" class="active"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/attendence"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome//view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/recep_attend"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li> -->
+            <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/recep_stu"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+             -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>        
@@ -69,237 +53,123 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Student panel</a></li>
+                 <li><a href="" class="active">Payment</a></li>
+                 <li><a href="<?php echo base_url();?>index.php/Welcome/viewpayment">View Payment</a></li>
+                
                 
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
         </div>
-        <div class="templatemo-content-container">
-          <div class="templatemo-content-widget no-padding">
-            <div class="panel panel-default table-responsive">
-              <table class="table table-striped table-bordered templatemo-user-table">
-                <thead>
-                  <tr>
-                    <td><a href="" class="white-text templatemo-sort-by"># <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Grade <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Subject <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Payment Amount <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Day and time <span class="caret"></span></a></td>
-                    <!-- <td>Edit</td>
-                    <td>Action</td>
-                    <td>Delete</td> -->
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>
-                  <tr>
-                    <td>2.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>
-                  <tr>
-                    <td>3.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>
-                  <tr>
-                    <td>5.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>  
-                   <tr>
-                    <td>6.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>  
-                   <tr>
-                    <td>7.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>  
-                   <tr>
-                    <td>8.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>                    
-                </tbody>
-              </table>    
-            </div>                          
-          </div>          
-          <!-- <div class="templatemo-flex-row flex-content-row">
-            <div class="col-1">
-              <div class="panel panel-default margin-10">
-                <div class="panel-heading"><h2 class="text-uppercase">Login Form</h2></div>
-                <div class="panel-body">
-                  <form action="index.html" class="templatemo-login-form">
-                    <div class="form-group">
-                      <label for="inputEmail">Email address</label>
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">                      
-                      <label for="inputEmail">Password</label>
-                      <input type="password" class="form-control" placeholder="Enter password">                                 
-                    </div>              
-                    <div class="form-group">
-                        <div class="checkbox squaredTwo">
-                            <label>
-                              <input type="checkbox"> Remember me
-                            </label>
-                        </div>            
-                    </div>
-                    <div class="form-group">
-                      <button type="submit" class="templatemo-blue-button">Submit</button>
-                    </div>
-                  </form>
-                </div>                
-              </div>              
-            </div> -->
-            <!-- <div class="col-1">              
-              <div class="templatemo-content-widget pink-bg">
-                <i class="fa fa-times"></i>                
-                <h2 class="text-uppercase margin-bottom-10">Latest Data</h2>
-                <p class="margin-bottom-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi sapien, fringilla at orci nec, viverra rhoncus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rhoncus erat non purus commodo, sit amet varius dolor sagittis.</p>                  
-              </div>            
-              <div class="templatemo-content-widget blue-bg">
+        <div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">              
+                   
+              <div class="templatemo-content-widget white-bg">
                 <i class="fa fa-times"></i>
-                <h2 class="text-uppercase margin-bottom-10">Older Data</h2>
-                <p class="margin-bottom-0">Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur. Aliquam convallis pharetra odio, in convallis erat molestie sed. Fusce mi lacus, semper sit amet mattis eu, volutpat vitae enim.</p>                
-              </div>            
-            </div>                        -->
-          <!-- </div> -->
-           <!-- Second row ends -->
-          <!-- <div class="templatemo-flex-row flex-content-row">
-            <div class="templatemo-content-widget white-bg col-2">
-              <i class="fa fa-times"></i>
-              <div class="media margin-bottom-30">
-                <div class="media-left padding-right-25">
-                  <a href="#">
-                    <img class="media-object img-circle templatemo-img-bordered" src="images/person.jpg" alt="Sunset">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <h2 class="media-heading text-uppercase blue-text">John Barnet</h2>
-                  <p>Project Manager</p>
-                </div>        
+                             
+              
+            <div class="templatemo-content-container">
+          <div class="templatemo-content-widget padding">
+           
+           <div class="row">
+ 
+
+
+
+<form action="<?php echo site_url('Search/search_keyword');?>" method = "post">
+<table>
+<tr>
+<td><input class="form-control" type="text" name = "keyword" /></td>
+<td><input class="btn btn-success" type="submit" value = "Search" /></td>
+</tr>
+</table>
+</form>
+
+
+
+
+<div class="templatemo-flex-row flex-content-row">
+            <div class="col-1">              
+                   
+              <div class="templatemo-content-widget white-bg">
+                <i class="fa fa-times"></i>
+                             
+              
+            <div class="templatemo-content-container">
+          <div class="templatemo-content-widget padding">
+           
+           <div class="row">
+            <form role="form" action="<?php echo site_url('spayment/stpayment');?>" method="post" class="login-form">
+              
+           
+              <label>Select the Subject for Payment</label>
+
+              <div class="input-group form-group">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-book"></i></span>
+                                        <!-- <input type="text" class="form-control" name="sub1" placeholder="Subject ID 1" aria-describedby="basic-addon1" required="required"> -->
+                      <select class="form-control" name="sub" id="sub">
+                        <label>Subject ID 1</label> 
+                        <option value="pick">None </option>
+                          
+                          <?php
+                            //$result=$this->db->query("SELECT course_id FROM course");
+                            // foreach($result->result() as $row){
+                            foreach($data as $row){
+                            echo "<option>".$row->courseid_fk."</option>";
+                            // <select class="form-control" name="hall_no" id="hall_no"> 
+                            }
+                          ?>
+                      </select>
               </div>
-              <div class="table-responsive">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td><div class="circle green-bg"></div></td>
-                      <td>New Task Issued</td>
-                      <td>02</td>                    
-                    </tr> 
-                    <tr>
-                      <td><div class="circle pink-bg"></div></td>
-                      <td>Task Pending</td>
-                      <td>22</td>                    
-                    </tr>  
-                    <tr>
-                      <td><div class="circle blue-bg"></div></td>
-                      <td>Inbox</td>
-                      <td>13</td>                    
-                    </tr>  
-                    <tr>
-                      <td><div class="circle yellow-bg"></div></td>
-                      <td>New Notification</td>
-                      <td>18</td>                    
-                    </tr>                                      
-                  </tbody>
-                </table>
-              </div>             
-            </div>
-            <div class="templatemo-content-widget white-bg col-1 text-center templatemo-position-relative">
-              <i class="fa fa-times"></i>
-              <img src="<?php echo base_url();?>images/person.jpg" alt="Bicycle" class="img-circle img-thumbnail margin-bottom-30">
-              <h2 class="text-uppercase blue-text margin-bottom-5">Paul Smith</h2>
-              <h3 class="text-uppercase margin-bottom-70">Managing Director</h3>
-              <div class="templatemo-social-icons-container">
-                <div class="social-icon-wrap">
-                  <i class="fa fa-facebook templatemo-social-icon"></i>  
-                </div>
-                <div class="social-icon-wrap">
-                  <i class="fa fa-twitter templatemo-social-icon"></i>  
-                </div>
-                <div class="social-icon-wrap">
-                  <i class="fa fa-google-plus templatemo-social-icon"></i>  
-                </div>                
+
+              
+
+              <!--  -->
+
+               <div class="input-group form-group">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-book"></i></span>
+
+
+                <input type="text" class="form-control" name="stuid" aria-describedby="basic-addon1" placeholder="Re-Enter the Student ID to confirm" required="required">    
+               
+                <?php
+                                        //   if(isset($_POST['submit'])){
+                                        //     $keyword=$_POST['keyword'];
+                                        //     echo  $keyword;
+                                          
+                                     
+                                        //  $result=$this->db->query("SELECT name FROM student Where student_id=$keyword ");
+                                        //  foreach($result->result() as $row){
+                                        //     echo "<option>".$row->name."</option>";
+                                        //  } 
+                                        // } 
+               ?> 
+             
               </div>
-            </div>
-            <div class="templatemo-content-widget white-bg col-1 templatemo-position-relative templatemo-content-img-bg">
-              <img src="<?php echo base_url();?>images/sunset-big.jpg" alt="Sunset" class="img-responsive content-bg-img">
-              <i class="fa fa-heart"></i>
-              <h2 class="templatemo-position-relative white-text">Sunset</h2>
-              <div class="view-img-btn-wrap">
-                <a href="" class="btn btn-default templatemo-view-img-btn">View</a>  
-              </div>              
-            </div>
-          </div>
-          <div class="pagination-wrap">
-            <ul class="pagination">
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true"><i class="fa fa-play"></i></span>
-                </a>
-              </li>
-            </ul>
-          </div>           -->
+
+
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-bell"></i>&nbsp&nbsp&nbspPayment Date</span>
+                                        <input type="date" class="form-control" name="pdate" aria-describedby="basic-addon1" required="required">
+                                </div>
+                               
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-check"></i></span>
+                                        <input type="number" min="0" class="form-control" name="amount" placeholder="Amount" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                <br>
+                                <input class="templatemo-blue-button width" type="submit" name="submit" value="submit">
+
+
+
+
+                                </div>
+        </div>
+                          </div>
+         </div>
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
             | Design:UCSC</p>

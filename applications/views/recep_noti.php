@@ -37,29 +37,28 @@
           <div class="square"></div>
           <h1>Receptionist</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/Receptionist.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div>       -->
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
-        <nav class="templatemo-left-nav">          
+        <nav class="templatemo-left-nav">   
+         <!--Left Dashboard  -->
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_attend"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_stu"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome//view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>      
@@ -72,55 +71,93 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Receptionist panel</a></li>
+                <!-- <li><a href="" class="active">Inbox</a></li> -->
+                <!-- Top Naviagtion Bar Links -->
+                <li><a href="" class="active">Compose</a></li>
                 
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
         </div>
-        <div class="templatemo-flex-row flex-content-row">
-            <div class="col-1">              
-              <div class="templatemo-content-widget orange-bg">
-                <i class="fa fa-times"></i>                
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object img-circle" src="<?php echo base_url();?>assets/images/notify.png" width="50" height="50" alt="Sunset">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h2 class="media-heading text-uppercase">Notify</h2>
-                    <p>This is a notification.</p>  
-                  </div>        
-                </div>                
-              </div>            
-              <div class="templatemo-content-widget white-bg">
+        <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
                 <i class="fa fa-times"></i>
-                <div class="media">
-                  <div class="media-left">
-                    <a href="#">
-                      <img class="media-object img-circle" src="<?php echo base_url();?>assets/images/notify.png" width="50" height="50"  alt="Sunset">
-                    </a>
-                  </div>
-                  <div class="media-body">
-                    <h2 class="media-heading text-uppercase">Notify</h2>
-                    <p>This is a notification.</p>  
-                  </div>
-                </div>                
-              </div>            
+               
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Compose Notification</h2></div>
+                <!-- <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div> -->
+          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
+                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                
+                    <div class="form-box">
+                        <div class="form-top">
+                        </div>
+                        <div class="form-bottom">
+                        <form role="form" action="<?php echo site_url('Signup/rrsend');?>" method="post" class="login-form">
+                                
+                               
+                                <!-- <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" id="notification_id" name="notification_id" placeholder=" Enter notification_Id" aria-describedby="basic-addon1" required="required">
+                                </div> -->
+                                
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="date" class="form-control" id="date" name="date" placeholder=" Date" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+                                 <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" id="message" name="message" placeholder="Message" aria-describedby="basic-addon1" required="required">
+                                </div>
+
+
+                                
+                               
+                
+                <tr>
+                    <td></td>
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="sent" value="sent" >
+                    <!-- echo '<script>alert("Message Sent Successfully")</script>'; -->
+                    <br/>
+                
+                </tr>
+                
+            </table>  
+
+            
+                              
+                                
+                            </form>       
+                    <!-- <center>
+                    <h3>OR</h3>
+                    <a href="<?php echo base_url();?>index.php/Welcome/login">Already You have an Account ?</a>
+                    </center> -->
+	             </div>
+                    
+
             </div>
-         <!-- <div>    -->
-        </div>
+
+
+    </section>
+
+     
+              </div>
+            </div>
+          </div>
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
-            | Design:UCSC</p>
+            | UCSC</p>
           </footer>         
         </div>
       </div>
     </div>
     
     <!-- JS -->
+
+  
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
     <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
     <script>

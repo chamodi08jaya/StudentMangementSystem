@@ -29,6 +29,7 @@
     -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/templatemo-style.css">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
     
@@ -48,17 +49,17 @@
           <div class="square"></div>
           <h1> Admin</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div>  -->     
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
         </div>
@@ -73,7 +74,7 @@
              -->
             <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
             <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
-            <li><a href="<?php echo base_url();?>index.php/Welcome/editcourses"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>          
        
@@ -114,16 +115,20 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
+                       
+                        <?php if(isset($_SESSION['status4']) && $_SESSION['status4'] != "") echo "<h3 style='color:red'>".$_SESSION['status4']."</h3>"; ?>
+                      
+                        
                         <form role="form" action="<?php echo site_url('Signup/rregistration');?>" method="post" class="login-form">
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Receptionist" value="Receptionist" aria-describedby="basic-addon1" required="required">
+                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Receptionist" value="Receptionist" readonly aria-describedby="basic-addon1" required="required">
                                 </div>
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="Receptionist_ID" name="receptionist_id" placeholder=" Enter Receptionist ID Number" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="Emp_no" name="emp_no" placeholder=" Enter Employee Number" aria-describedby="basic-addon1" required="required">
@@ -143,10 +148,7 @@
                                         <input type="tel" class="form-control" name="contact_number" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
                                 </div>
 
-                                <div class="input-group form-group">
-                                    <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span>
-                                </div>
-
+                          
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
@@ -163,6 +165,7 @@
                 <tr>
                     <td></td>
                     <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit">
+                    <br/>
                     <br/>
                     <input class="templatemo-blue-button width-100" type="reset" name="RESET"></td>
                 </tr>

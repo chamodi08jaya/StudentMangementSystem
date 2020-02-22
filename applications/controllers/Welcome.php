@@ -13,6 +13,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('about');
 	}
+	public function viewpayment(){
+		$this->load->view('viewpayment');
+		}
 	public function contact()
 	{
 		$this->load->view('contact');
@@ -25,6 +28,18 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function view_tutes()
+	{
+		$this->load->view('view_tutes');
+	}
+	public function view_grades()
+	{
+		$this->load->view('view_grades');
+	}
+	public function stu_coursecontent()
+	{
+		$this->load->view('stu_coursecontent');
+	}
 	
 	public function login_submit()
 	{
@@ -32,13 +47,32 @@ class Welcome extends CI_Controller {
 		$this->load->view('login_submit');
 
 		// $this->load->view('admin');
-
-		
-
-    
-
-		
 	}
+	public function stu_pay()
+		{
+			$this->load->view('stu_pay');
+		}	
+
+		public function editt_teacher()
+		{
+			$this->load->view('editt_teacher');
+		}	
+
+		
+
+	public function edit_student(){
+		$this->load->view('edit_student');
+	}
+	public function view_booking(){
+		$this->load->view('view_booking');
+	}
+	public function myprofile(){
+		$this->load->view('myprofile');
+	}
+	public function cancel_booking(){
+		$this->load->view('cancel_booking');
+	}
+	
 	public function admin(){
 		$this->load->view('admin');
 		
@@ -54,10 +88,21 @@ class Welcome extends CI_Controller {
 	public function recepregistrations(){
 		$this->load->view('recepregistrations');
 	}
+	public function teachercourse(){
+		$this->load->view('teachercourse');
+	}
+	public function teachercourse_content(){
+		$this->load->view('teachercourse_content');
+	}
 
 	public function editusers(){
 		$this->load->view('editusers');
 	}
+
+	public function view_answers(){
+		$this->load->view('view_answers');
+	}
+
 
 	public function editcourses(){
 		$this->load->view('editcourses');
@@ -115,16 +160,8 @@ class Welcome extends CI_Controller {
 	}
 	
 	public function logout(){
-		// $this->load->view('logout');
-		if (isset($_SESSION['user_name'])){
-			session_unset($_SESSION["user_name"]);
-			session_unset($_SESSION["user_type"]);
-			session_unset($_SESSION["user_id"]);
-			$message = base64_encode(urlencode(("Logged Out Successfully")));
-			
-			header('Location:login.php?msg=' . $message);
-			exit();
-		}	
+		$this->load->view('login');
+	
 	}
 	// public function teacherregistrations{
 	// 	$this->load->view('teacherregistrations');

@@ -9,12 +9,12 @@
 if(isset($_POST['submit'])){
 	
     //Assign data from login form to variables
-	$user_name = $_POST['user_name'];
+	$user_id = $_POST['user_id'];
 	$password = $_POST['password'];
     // print_r('hello');
     
     //Select User from database
-    $userQuery = "SELECT * FROM users WHERE user_name ='$user_name' and password ='$password'";
+    $userQuery = "SELECT * FROM users WHERE user_id ='$user_id' and password ='$password'";
     $userResult= mysqli_query($connection, $userQuery);
     //print_r($userResult);
     
